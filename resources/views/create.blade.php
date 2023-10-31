@@ -9,59 +9,66 @@
     <title>Document</title>
 </head>
 <body>
-<div class=""></div>
-<div>
-    <form action="{{route('store')}}" method="post">
-        @csrf
+ <div class="container">
+     <div class="row justify-content-center">
+         <div class="col-md-6">
+             <div class="bg-success text-white text-center p-4"><h3>Create New Student Form</h3></div>
+             <div>
+                 <form action="{{route('store')}}" method="post" enctype="multipart/form-data">
+                     @csrf
 
-        <label for="">Enter student name</label>
-        <input type="text" name="studentname" placeholder="enter student name" class="form-control">
-        @error('studentname')
-        <span style="color:red;">{{$message}}</span>
-        @enderror
+                     <label for="" class="text-primary">Enter student name</label>
+                     <input type="text" name="studentname" placeholder="enter student name" class="form-control">
+                     @error('studentname')
+                     <span style="color:red;">{{$message}}</span>
+                     @enderror
 
-        <label for="">Enter student age</label>
-        <input type="text" name="age" placeholder="enter student age" class="form-control">
-        @error('age')
-        <span style="color:red;">{{$message}}</span>
-        @enderror
+                     <label for=""class="text-primary">Enter student age</label>
+                     <input type="text" name="age" placeholder="enter student age" class="form-control">
+                     @error('age')
+                     <span style="color:red;">{{$message}}</span>
+                     @enderror
 
-        <label for="">Enter student class</label>
-        <input type="text" name="class" placeholder="enter student class" class="form-control">
-        @error('class')
-        <span style="color:red;">{{$message}}</span>
-        @enderror
+                     <label for=""class="text-primary">Enter student class</label>
+                     <input type="text" name="class" placeholder="enter student class" class="form-control">
+                     @error('class')
+                     <span style="color:red;">{{$message}}</span>
+                     @enderror
 
-        <label for="">Enter student rollno</label>
-        <input type="text" name="rollno" placeholder="enter student rollno" class="form-control">
-        @error('rollno')
-        <span style="color:red;">{{$message}}</span>
-        @enderror
+                     <label for=""class="text-primary">Enter student rollno</label>
+                     <input type="text" name="rollno" placeholder="enter student rollno" class="form-control">
+                     @error('rollno')
+                     <span style="color:red;">{{$message}}</span>
+                     @enderror
 
-        <label for="">Enter student emailid</label>
-        <input type="text" name="emailid" placeholder="enter student emailid" class="form-control">
-        @error('emailid')
-        <span style="color:red;">{{$message}}</span>
-        @enderror
+                     <label for=""class="text-primary">Enter student emailid</label>
+                     <input type="text" name="emailid" placeholder="enter student emailid" class="form-control">
+                     @error('emailid')
+                     <span style="color:red;">{{$message}}</span>
+                     @enderror
 
-        <label for="">upload student image</label>
-        <input type="file" name="studentimage"  class="form-control">
-        @error('studentimage')
-        <span style="color:red;">{{$message}}</span>
-        @enderror
+                     <label for=""class="text-primary">upload student image</label>
+                     <input type="file" name="studentimage"  class="form-control">
+                     @error('studentimage')
+                     <span style="color:red;">{{$message}}</span>
+                     @enderror
 
-        <label for="">Enter student city</label>
-        <input type="text" name="studentcity" placeholder="enter student city" class="form-control">
-        @error('studentcity')
-        <span style="color:red;">{{$message}}</span>
-        @enderror
+                     <label for=""class="text-primary">Enter student city</label>
+                     <input type="text" name="studentcity" placeholder="enter student city" class="form-control">
+                     @error('studentcity')
+                     <span style="color:red;">{{$message}}</span>
+                     @enderror
 
-        <input type="submit" value="create">
+                     <input type="submit" value="create" class="btn btn-success mt-2 w-100">
 
 
 
-    </form>
-</div>
+                 </form>
+             </div>
+         </div>
+     </div>
+ </div>
+
 
 </body>
 </html>

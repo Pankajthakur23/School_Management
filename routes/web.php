@@ -15,11 +15,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('Index');
 });
-Route::get('create',[HomeController::class,'create']);
+Route::get('create',[HomeController::class,'create'])->name('create');
 Route::post('store',[HomeController::class,'store'])->name('store');
 Route::get('Index',[HomeController::class,'Index'])->name('Index');
 Route::get('edit/{id}',[HomeController::class,'edit'])->name('edit');
 Route::put('update/{data}',[HomeController::class,'update'])->name('update');
 Route::get('del/{id}',[HomeController::class,'delete'])->name('delete');
+Route::get('duplicate/{id}',[HomeController::class,'duplicate'])->name('duplicate');

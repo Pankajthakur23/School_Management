@@ -20,43 +20,43 @@
                 @method('put')
                 @csrf
 
-                <label for="">Enter student name</label>
+                <label for=""class="text-warning">Enter student name</label>
                 <input type="text" value="{{$data->studentname}}" name="studentname" placeholder="enter student name" class="form-control">
                 @error('studentname')
                 <span style="color:red;">{{$message}}</span>
                 @enderror
 
-                <label for="">Enter student age</label>
+                <label for=""class="text-warning">Enter student age</label>
                 <input type="text" value="{{$data->age}}" name="age" placeholder="enter student age" class="form-control">
                 @error('age')
                 <span style="color:red;">{{$message}}</span>
                 @enderror
 
-                <label for="">Enter student class</label>
+                <label for=""class="text-warning">Enter student class</label>
                 <input type="text" value="{{$data->class}}" name="class" placeholder="enter student class" class="form-control">
                 @error('class')
                 <span style="color:red;">{{$message}}</span>
                 @enderror
 
-                <label for="">Enter student rollno</label>
+                <label for=""class="text-warning">Enter student rollno</label>
                 <input type="text" value="{{$data->rollno}}" name="rollno" placeholder="enter student rollno" class="form-control">
                 @error('rollno')
                 <span style="color:red;">{{$message}}</span>
                 @enderror
 
-                <label for="">Enter student emailid</label>
+                <label for=""class="text-warning">Enter student emailid</label>
                 <input type="text"  value="{{$data->emailid}}" name="emailid" placeholder="enter student emailid" class="form-control">
                 @error('emailid')
                 <span style="color:red;">{{$message}}</span>
                 @enderror
 
-                <label for="">upload student image</label>
+                <label for=""class="text-warning">upload student image</label>
                 <input type="file" value="{{$data->studentimage}}" name="studentimage"  class="form-control">
                 @error('studentimage')
                 <span style="color:red;">{{$message}}</span>
                 @enderror
 
-                <label for="">Enter student city</label>
+                <label for=""class="text-warning">Enter student city</label>
                 <input type="text" value="{{$data->studentcity}}" name="studentcity" placeholder="enter student city" class="form-control">
                 @error('studentcity')
                 <span style="color:red;">{{$message}}</span>
